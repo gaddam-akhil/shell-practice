@@ -7,6 +7,6 @@ echo "present which directory:: $PWD"
 echo "who is runningnthis script:: $USER"
 echo "home directory of the user:: $HOME"
 echo "pid of the script:: $$"
-sleep 20&
+sleep 100 &
 echo "backgroud process id:: $!"
 echo "all args passed to script:: $*"
