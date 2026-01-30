@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TIMESTAMP=$(date)
+STARTTIME=$(date)
 
-echo "script executed at $TIMESTAMP"
+echo "script executed at $STARTTIME"
 
