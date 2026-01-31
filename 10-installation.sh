@@ -8,3 +8,11 @@ fi
 echo "installing nginx"
 
 dnf install nginx -y
+
+if [ $? -ne o ]; then
+ echo "installing nginx ... failure"
+
+ else 
+  echo "installing nginx... sucess"
+
+  if
