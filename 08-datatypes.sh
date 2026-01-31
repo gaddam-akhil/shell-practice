@@ -8,4 +8,4 @@ echo "sum is:: $SUM"
 
 
 FRUITS=("mango" "Apple" "banana" "Pomo")
-echo "list of friuts:: $FRUITS[@]"
+echo "list of friuts:: ${FRUITS[@]}"
