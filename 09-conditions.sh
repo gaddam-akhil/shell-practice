@@ -22,11 +22,26 @@
 #  echo "given $NUMBER: is less than to 20"
 #  fi
 
-NUMBER=$1
-if [ $NUMBER -gt 25 ]; then
-  echo "given number is greater than :: $NUMBER"
-  elif [ $NUMBER -eq 25 ]; then
- echo "given number is equal to :: $NUMBER"
- else
-  echo "given number is lessthan :: $NUMBER"
-  fi
+# NUMBER=$1
+# if [ $NUMBER -gt 25 ]; then
+#   echo "given number is greater than :: $NUMBER"
+#   elif [ $NUMBER -eq 25 ]; then
+#  echo "given number is equal to :: $NUMBER"
+#  else
+#   echo "given number is lessthan :: $NUMBER"
+#   fi
+
+# check_even_odd.sh
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <number>"
+    exit 1
+fi
+
+number=$1
+
+if (( number % 2 == 0 )); then
+    echo "$number is even."
+else
+    echo "$number is odd."
+fi
