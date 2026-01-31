@@ -61,7 +61,7 @@
 
 FILENAME=$1
 if [ $FILENAME -ne akhil ]; then
- echo "file doesnot exit'
+ echo "file doesnot exit"
  else 
  echo "file exit"
  fi
