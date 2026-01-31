@@ -13,6 +13,6 @@ if [ $? -ne o ]; then
  echo "installing nginx ... FAILURE"
 
  else 
-  echo "installing nginx... SUCESS"
+  echo "installing nginx... SUCCESS"
 
   fi
