@@ -22,7 +22,7 @@
 #  echo "given $NUMBER: is less than to 20"
 #  fi
 
-NUMBER=20
+NUMBER=$1
 if [ $NUMBER -gt 25 ]; then
   echo "given number is greater than :: $NUMBER"
   elif [ $NUMBER -eq 25 ]; then
