@@ -15,7 +15,7 @@ else
 fi
 }
 
-dnf install nginx -y
+dnf install nginsssx -y
 VALIDATE $? "installing nginx"
 
 dnf install nodejs -y
