@@ -48,7 +48,17 @@ if [ $USER_ID -ne 0 ]; then
 
  dnf install nginx -y
 
- if [ $?  ] 
+if [ $? -ne 0 ]; then
+
+ echo "installing nginx FAILURE"
+
+ exit 1
+
+ else 
+
+ echo "installing nginx SUCCESS"
+
+ fi
 
 
 
