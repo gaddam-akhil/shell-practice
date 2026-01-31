@@ -22,3 +22,4 @@ echo "show you id $USER_ID"
 if [ $USER_ID -ne 0 ]; then
  echo "please indtall nginx as root user"
  EXIT 1
+ fi
