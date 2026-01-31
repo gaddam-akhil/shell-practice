@@ -19,3 +19,8 @@ NUM2=akhil
 
 SUM=$(($NUM1+$NUM2))
 echo "sum is $SUM"
+
+FRUITS=("mango" "apple")
+echo "list of fruits : ${FRUITS(@)}"
+echo "first fruit : ${FRUIT(0)}"
+echo "secound fruit : ${FRUIT(1)}
