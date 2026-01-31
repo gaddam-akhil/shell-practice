@@ -11,9 +11,13 @@
 
 # echo "password is $PASSWORD"
 
-echo "please enter username::"
-read  -s USERNAME
-echo "username is :- $USERNAME"
-echo "please enter paswword::"
-read  -s PASSSWORD
-echo "paswword is :- $PASSSWORD"
+# echo "please enter username::"
+# read  -s USERNAME
+# echo "username is :- $USERNAME"
+# echo "please enter paswword::"
+# read  -s PASSSWORD
+# echo "paswword is :- $PASSSWORD"
+
+echo "please enter tou pass"
+read PASSWORD
+echo "pass is $PASSWORD"
