@@ -33,10 +33,10 @@
 
 # check_even_odd.sh
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <number>"
-    exit 1
-fi
+# if [ "$#" -ne 1 ]; then
+#     echo "Usage: $0 <number>"
+#     exit 1
+# fi
 
 # number=$1
 
@@ -46,5 +46,12 @@ fi
 #     echo "$number is odd."
 # fi
 
-# NUMBER=$1
-# if (($NUMBER ))
+NUMBER=$1
+if [ $NUMBER -gt 0 ]; then
+ echo "print $NUMBER is postive"
+ elif
+if [ $NUMBER -ls 0 ]; then
+ echo "print $NUMBER is negative"
+ else 
+  echo "print $NUMBER is zero"
+  fi 
