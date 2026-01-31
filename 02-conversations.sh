@@ -15,8 +15,8 @@
 # echo "$PERSON1:: am fine thanks for asking, what are you learling $PERSON2?"
 # echo "$PERSON2:: am learning shell"
 
-PERSON1=AKHIL
-PERSON2=ARUN
+PERSON1=$1
+PERSON2=$2
 
 echo "$PERSON1: Hey $PERSON2, how are you?"
 echo "$PERSON2: Im good, $PERSON1. What about you?"
