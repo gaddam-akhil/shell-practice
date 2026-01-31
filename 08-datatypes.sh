@@ -22,5 +22,7 @@ echo "sum is $SUM"
 
 FRUITS=("mango" "apple")
 echo "list of fruits : ${FRUITS[@]}"
+
 echo "first fruit : ${FRUIT[0]}"
-echo "secound fruit : ${FRUIT[1]}
+
+echo "secound fruit : ${FRUIT[1]}"
