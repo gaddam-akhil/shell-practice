@@ -13,4 +13,4 @@
 
 echo "please enter username::"
 read -s USERNAME
-#echo "username is - $USERNAME"
+echo "username is - $USERNAME"
