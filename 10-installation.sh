@@ -19,7 +19,14 @@
 
 USER_ID=$(id -u)
 echo "show you id $USER_ID"
+ROOT_ID=$(sudo id -u)
+ echo "show root id $ROOT_ID"
+
 if [ $USER_ID -ne 0 ]; then
- echo "please indtall nginx as root user"
- EXIT 1
+ echo "please run this script with root user access"
+ exit 1
  fi
+
+ echo "installing nginx"
+
+ dnf install nginx -y
