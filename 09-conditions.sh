@@ -46,17 +46,22 @@
 #     echo "$number is odd."
 # fi
 
-NUMBER=$1
-if [ $NUMBER -gt 0 ]; then
+# NUMBER=$1
+# if [ $NUMBER -gt 0 ]; then
 
- echo "print $NUMBER is postive"
+#  echo "print $NUMBER is postive"
 
- elif [ $NUMBER -lt 0 ]; then
+#  elif [ $NUMBER -lt 0 ]; then
 
- echo "print $NUMBER is negative"
+#  echo "print $NUMBER is negative"
 
+#  else 
+
+#   echo "print $NUMBER is zer
+
+FILENAME=$1
+if [ $FILENAME -ne akhil ]
+ echo "file doesnot exit'
  else 
-
-  echo "print $NUMBER is zero"
-
-  fi 
+ echo "file exit"
+ fi
