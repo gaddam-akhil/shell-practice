@@ -13,15 +13,12 @@ exit 1
    echo "$2 .. nginx SUCCESS"
  fi
 }
- 
+
+dnf install nginxxx -y
 VALIDATE $? "installing nginx"
 
- dnf install nginxxx -y
-
+dnf install mysql -y
 VALIDATE $? "installing mysql"
 
- dnf install mysql -y
-
-VALIDATE $? "installing nodejs"
-
- dnf install nodejs -y
+dnf install nodejs -y
+VALIDATE $? "installing nodejs" 
