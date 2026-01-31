@@ -23,9 +23,12 @@
 #I want a command to be executed and take the output into variable,how to do that
 START_TIME=$(date +%s)
 echo "start time is - $START_TIME"
+sleep 10
+
 END_TIME=$(date +%s)
+
 echo "end time is -$END_TIME"
 
-TOTALTIME=$(($START_TIME-$END_TIME))
+TOTALTIME=$(($END_TIME-$START_TIME))
 
 echo "TOTALTIME is $TOTALTIME"
