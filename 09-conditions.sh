@@ -25,6 +25,8 @@
 NUMBER=20
 if [ $NUMBER -gt 25 ]; then
   echo "given number is greater than :: $NUMBER"
+  elif [ $NUMBER -eq 25 ]
+ echo "given number is equal to :: $NUMBER"
  else
   echo "given number is lessthan :: $NUMBER"
   fi
