@@ -24,7 +24,7 @@ exit 1
 for PACKAGE in $@ 
 do 
  dnf list installed $PACKAGE &>>$LOGS_FILES | tee -a $LOGS_FILES
- if[ $? -ne 0 ]; then
+ if [ $? -ne 0 ]; then
 echo "$PACKAGE not installed,installing now"
  dnf install $PACKAGE -y &>>$LOGS_FILES | tee -a $LOGS_FILES
  VALIDATE $@ "$PACKAGE installing"
