@@ -11,6 +11,6 @@
 
 # echo "password is $PASSWORD"
 
-echo ("please enter username::")
+echo "please enter username::"
 read USERNAME
 echo "username is - $USERNAME"
