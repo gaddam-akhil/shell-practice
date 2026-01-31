@@ -15,4 +15,4 @@ if [ $? -ne o ]; then
  else 
   echo "installing nginx... sucess"
 
-  if
+  fi
