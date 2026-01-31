@@ -7,12 +7,12 @@
 # echo "sum is:: $SUM"
 
 
-# FRUITS=("mango" "Apple" "banana" "Pomo")
-# echo "list of friuts:: ${FRUITS[@]}"
-# echo "first fruit:: ${FRUITS[0]}"
-# echo "secound friut:: ${FRUITS[1]}"
-# echo "third fruit:: ${FRUITS[2]}"
-# echo "fourth fruit:: ${FRUITS[3]}"
+FRUITS=("mango" "Apple" "banana" "Pomo")
+echo "list of friuts:: ${FRUITS[@]}"
+echo "first fruit:: ${FRUITS[0]}"
+echo "secound friut:: ${FRUITS[1]}"
+echo "third fruit:: ${FRUITS[2]}"
+echo "fourth fruit:: ${FRUITS[3]}"
 
 NUM1=100
 NUM2=akhil
@@ -23,6 +23,6 @@ echo "sum is $SUM"
 FRUITS=("mango" "apple")
 echo "list of fruits : ${FRUITS[@]}"
 
-echo "first fruit : ${FRUIT[0]}"
+echo "first fruit : ${FRUITS[0]}"
 
-echo "secound fruit : ${FRUIT[1]}"
+echo "secound fruit : ${FRUITS[1]}"
