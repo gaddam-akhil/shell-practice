@@ -47,11 +47,16 @@
 # fi
 
 NUMBER=$1
-if [ $NUMBER -gt 0 ]; then
+if [ $NUMBER -gt 0 ]; 
+
  echo "print $NUMBER is postive"
- elif
-if [ $NUMBER -ls 0 ]; then
+
+ elif [ $NUMBER -ls 0 ]; then
+
  echo "print $NUMBER is negative"
+
  else 
+
   echo "print $NUMBER is zero"
+  
   fi 
