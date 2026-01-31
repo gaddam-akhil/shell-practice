@@ -38,10 +38,13 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
-number=$1
+# number=$1
 
-if (( number % 2 == 0 )); then
-    echo "$number is even."
-else
-    echo "$number is odd."
-fi
+# if (( number % 2 == 0 )); then
+#     echo "$number is even."
+# else
+#     echo "$number is odd."
+# fi
+
+# NUMBER=$1
+# if (($NUMBER ))
