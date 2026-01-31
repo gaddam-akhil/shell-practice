@@ -18,3 +18,4 @@
 #   fi
 
 USER_ID=$(id -u)
+echo "show you id $USER_ID"
