@@ -11,5 +11,5 @@
 echo "akhil:: hi arun, how are you?"
 echo "arun:: hi akhil, am doing good, how are you?"
 echo "akhil:: am fine thanks for asking, what are you learling arun?"
-esho "arun:: am learning shell"
+echo "arun:: am learning shell"
 
