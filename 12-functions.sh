@@ -1,5 +1,7 @@
 #!/bin/bash
 
+USER_ID=$(id -u)
+
 if [ $USER_ID -ne 0 ]; then
  echo "please run this script as root user access" 
 exit 1
@@ -14,7 +16,7 @@ exit 1
  fi
 }
 
-dnf install nginxxx -y
+dnf install nginx -y
 VALIDATE $? "installing nginx"
 
 dnf install mysql -y
@@ -22,3 +24,4 @@ VALIDATE $? "installing mysql"
 
 dnf install nodejs -y
 VALIDATE $? "installing nodejs" 
+
