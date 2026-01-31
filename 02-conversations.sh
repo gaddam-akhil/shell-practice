@@ -30,8 +30,8 @@
 # echo "$PERSON4: Sure, see you in the evening"
 # echo "$PERSON1 = $PERSON2 = $PERSON3 = $PERSON4"
 
-USERNAME=DAN
+# USERNAME=DAN
 
-read USERNAME
+# read USERNAME
 
-echo "welcome $USERNAME"
+# echo "welcome $USERNAME"
