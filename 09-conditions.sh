@@ -47,7 +47,7 @@
 # fi
 
 NUMBER=$1
-if [ $NUMBER -gt 0 ]; 
+if [ $NUMBER -gt 0 ]; then
 
  echo "print $NUMBER is postive"
 
