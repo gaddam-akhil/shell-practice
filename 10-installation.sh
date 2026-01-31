@@ -18,9 +18,6 @@
 #   fi
 
 USER_ID=$(id -u)
-echo "show you id $USER_ID"
-ROOT_ID=$(sudo id -u)
- echo "show root id $ROOT_ID"
 
 if [ $USER_ID -ne 0 ]; then
  echo "please run this script with root user access"
