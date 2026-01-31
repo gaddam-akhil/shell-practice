@@ -23,6 +23,8 @@
 #  fi
 
 NUMBER=20
-if [ $NUMBER -gt 15 ]; then
+if [ $NUMBER -gt 25 ]; then
   echo "given number is greater than :: $NUMBER"
+ else
+  echo "given number is lessthan :: $NUMBER"
   fi
