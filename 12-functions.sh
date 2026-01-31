@@ -16,7 +16,7 @@ exit 1
  
 VALIDATE $? "installing nginx"
 
- dnf install nginx -y
+ dnf install nginxxx -y
 
 VALIDATE $? "installing mysql"
 
