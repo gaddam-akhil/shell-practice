@@ -12,5 +12,5 @@
 # echo "password is $PASSWORD"
 
 echo "please enter username::"
-read USERNAME
-echo "username is - $USERNAME"
+read -s USERNAME
+#echo "username is - $USERNAME"
