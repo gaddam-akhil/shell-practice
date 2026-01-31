@@ -24,12 +24,13 @@
 
 START_TIME=$(date +%s)
 
-echo "start time is - $START_TIME"
+echo "start time is  $START_TIME"
 
 sleep 10
 
 END_TIME=$(date +%s)
 
+echo "endtime is $END_TIME"
 
 TOTALTIME=$(($END_TIME-$START_TIME))
 
