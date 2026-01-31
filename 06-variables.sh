@@ -21,12 +21,17 @@
 #TOTALTIME=$(($END_TIME-$START_TIME))
 #echo "script executed at:: $TOTALTIME secounds"
 #I want a command to be executed and take the output into variable,how to do that
-
+echo "enter username ::"
+read USERNAME
+echo "username is $USERNAME"
 START_TIME=$(date +%s)
 
 echo "start time is  $START_TIME"
 
 sleep 10
+echo "enter password ::"
+read -s PASSWORD
+echo "password is $PASSWORD"
 
 END_TIME=$(date +%s)
 
