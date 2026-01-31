@@ -7,12 +7,12 @@ if [ $USER_ID -ne 0 ]; then
 fi
 echo "installing nginx"
 
-dnf install nginxccc -y
+dnf install nginx -y
 
 if [ $? -ne o ]; then
- echo "installing nginx ... failure"
+ echo "installing nginx ... FAILURE"
 
  else 
-  echo "installing nginx... Sucess"
+  echo "installing nginx... SUCESS"
 
   fi
