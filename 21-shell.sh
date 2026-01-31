@@ -30,5 +30,9 @@ fi
 for PACKAGE in $@
 do
   dnf install $PACKAGE -y &>> $LOGS_FILES
+if [ $? -ne 0 ]; then
+  echo "$PACKAGE is not installed, installing now"
   VALIDATE $? "installing $PACKAGE" 
+else
+  echo "$PACKAGE already installed....skipping"
 done
