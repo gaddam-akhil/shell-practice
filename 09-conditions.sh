@@ -60,7 +60,7 @@
 #   echo "print $NUMBER is zer
 
 FILENAME=$1
-if [ $FILENAME -ne akhil ]
+if [ $FILENAME -ne akhil ]; then
  echo "file doesnot exit'
  else 
  echo "file exit"
