@@ -23,6 +23,6 @@
 #  fi
 
 NUMBER=20
-if [ $NUMBER -gt 25 ]; then
+if [ $NUMBER -gt 15 ]; then
   echo "given number is greater than :: $NUMBER"
   fi
