@@ -29,6 +29,6 @@ echo "$PACKAGE not installed,installing now"
  dnf install $PACKAGE -y &>>$LOGS_FILES 
  VALIDATE $? "$PACKAGE installing"
 else
-echo "$PACKAGE already installed, "\e[33m skipping""
+echo "$PACKAGE already installed, echo -e "\e[33m skipping""
 fi
 done 
