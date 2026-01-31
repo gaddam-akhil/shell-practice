@@ -63,12 +63,33 @@ if [ $? -ne 0 ]; then
 
  fi
 
+dnf install mysql -y
 
-# USER_ID=$(id -u)
-# echo "user id is $USER_ID"
+if [ $? -ne 0 ]; then
 
+ echo "installing mysql FAILURE"
 
+ exit 1
 
+ else 
+
+ echo "installing mysql SUCCESS"
+
+ fi
+
+dnf install nodejs -y
+
+if [ $? -ne 0 ]; then
+
+ echo "installing nodejs FAILURE"
+
+ exit 1
+
+ else 
+
+ echo "installing nodejs SUCCESS"
+
+ fi
 
 
 
