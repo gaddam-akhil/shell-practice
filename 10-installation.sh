@@ -38,6 +38,9 @@
 #   fi
 
 USER_ID=$(id -u)
+echo "user id is $USER_ID"
+ROOT_ID=$(sudo id -u)
+echo "root id is $ROOT_ID"
 
 if [ $USER_ID -ne 0 ]; then
  echo "please run this script as root user access"
