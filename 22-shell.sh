@@ -1,5 +1,6 @@
 #!/bin/bash
-
+set -e
+trap 'echo "There is an error in $LINENO, Command: $BASH_COMMAND"' ERR 
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILES="/var/log/shell-script/$0.log"
