@@ -26,7 +26,7 @@ else
 for PACKAGE in $@
  do 
   dnf install $PACKAGE -y  &>> $LOGS_FILES 
- if [ $? -ne 0 ]
+ if [ $? -ne 0 ]; then
   echo "installing $PACKAGE"
   VALIDATE $? "installing $PACKAGE"
   else
