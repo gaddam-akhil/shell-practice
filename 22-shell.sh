@@ -5,27 +5,42 @@ USER_ID=$(id -u)
    echo " please run this script as root user access"
    exit 1
  fi  
-#    echo "installing nginx"
-#    dnf install nginx -y
-#  if [ $? -ne 0 ]; then
-#    echo "installing nginx FAILURE"
-#  else 
-#    exit 1
-#    echo "installing nginx SuCCESS"
-#  fi
-
-   dnf install mysql -y
+   echo "installing nginx"
+   dnf install nginx -y
  if [ $? -ne 0 ]; then
-   echo "installing mysql FAILURE"
+   echo "installing nginx FAILURE"
  else 
    exit 1
-   echo "installing mysql SuCCESS"
+   echo "installing nginx SuCCESS"
  fi
 
-   dnf install nodejs -y
+echo "installing mysql"
+
+   dnf install mysql -y
+
  if [ $? -ne 0 ]; then
-   echo "installing nodejs FAILURE"
+
+   echo "installing mysql FAILURE"
+
  else 
+
    exit 1
+
+   echo "installing mysql SuCCESS"
+
+ fi
+
+echo "installing nodesjs"
+
+   dnf install nodejs -y
+
+ if [ $? -ne 0 ]; then
+
+   echo "installing nodejs FAILURE"
+
+ else 
+
+   exit 1
+
    echo "installing nodejs SuCCESS"
  fi
