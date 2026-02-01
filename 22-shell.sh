@@ -31,5 +31,5 @@ for PACKAGE in $@
  else
   VALIDATE $? "installing $PACKAGE"
   echo -e "already installed $PACKAGE...$Y skipping $N"
- 
+ fi
  done 
