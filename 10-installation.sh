@@ -46,9 +46,7 @@ if [ $USER_ID -ne 0 ]; then
  echo "please run this script as root user access"
  exit 1
  fi
-
  echo "installing nginx"
-
  dnf install nginx -y
 echo "$?"
 if [ $? -ne 0 ]; then
