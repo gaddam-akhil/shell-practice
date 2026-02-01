@@ -9,8 +9,8 @@ USER_ID=$(id -u)
    dnf install nginx -y
  if [ $? -ne 0 ]; then
    echo "installing nginx FAILURE"
- else 
-   exit 1
+ exit 1
+    else
    echo "installing nginx SuCCESS"
  fi
 
@@ -21,9 +21,9 @@ echo "installing mysql"
 
    echo "installing mysql FAILURE"
 
- else 
+ exit 1
 
-   exit 1
+   else
 
    echo "installing mysql SuCCESS"
 
@@ -36,9 +36,9 @@ echo "installing nodejs"
 
    echo "installing nodejs FAILURE"
 
- else 
+ exit 1
 
-   exit 1
+   else
 
    echo "installing nodejs SuCCESS"
  fi
