@@ -28,8 +28,8 @@ for PACKAGE in $@
   dnf install $PACKAGE -y  &>> $LOGS_FILES 
  if [ $? -ne 0 ]
   echo "installing $PACKAGE"
- else
   VALIDATE $? "installing $PACKAGE"
+  else
   echo -e "already installed $PACKAGE...$Y skipping $N"
  fi
  done 
