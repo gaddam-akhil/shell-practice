@@ -15,7 +15,6 @@ USER_ID=$(id -u)
  fi
 
 echo "installing mysql"
-
    dnf install mysql -y
 
  if [ $? -ne 0 ]; then
@@ -30,8 +29,7 @@ echo "installing mysql"
 
  fi
 
-echo "installing nodesjs"
-
+echo "installing nodejs"
    dnf install nodejs -y
 
  if [ $? -ne 0 ]; then
