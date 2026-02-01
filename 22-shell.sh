@@ -5,14 +5,14 @@ USER_ID=$(id -u)
    echo " please run this script as root user access"
    exit 1
  fi  
-   echo "installing nginx"
-   dnf install nginx -y
- if [ $? -ne 0 ]; then
-   echo "installing nginx FAILURE"
- else 
-   exit 1
-   echo "installing nginx SuCCESS"
- fi
+#    echo "installing nginx"
+#    dnf install nginx -y
+#  if [ $? -ne 0 ]; then
+#    echo "installing nginx FAILURE"
+#  else 
+#    exit 1
+#    echo "installing nginx SuCCESS"
+#  fi
 
    dnf install mysql -y
  if [ $? -ne 0 ]; then
