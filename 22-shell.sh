@@ -1,44 +1,28 @@
 #!/bin/bash
 
 USER_ID=$(id -u)
+LOGS_FOLDER="/var/log/shell-script"
+LOGS_FILES="/va/log/shell-script/$0.log"
  if [ $USER_ID -ne 0 ]; then
-   echo " please run this script as root user access"
+   echo " please run this script as root user access" &>>$0.log
    exit 1
  fi  
-   echo "installing nginx"
-   dnf install nginx -y
- if [ $? -ne 0 ]; then
-   echo "installing nginx FAILURE"
- exit 1
-    else
-   echo "installing nginx SuCCESS"
+  mkdir -p $LOGS_FOLDER
+
+ VALIDATE(){
+ if [ $1 -ne 0 ]; then
+   echo "$2  FAILURE"
+   exit 1
+else
+   echo " $2 SuCCESS"
  fi
+ }
 
-echo "installing mysql"
-   dnf install mysql -y
+dnf install nginx -y
+VALIDATE $? "installing nginx" &>>$0.log
 
- if [ $? -ne 0 ]; then
+dnf install mysql -y
+VALIDATE $? "installing mysql" &>>$0.log
 
-   echo "installing mysql FAILURE"
-
- exit 1
-
-   else
-
-   echo "installing mysql SuCCESS"
-
- fi
-
-echo "installing nodejs"
-   dnf install nodejs -y
-
- if [ $? -ne 0 ]; then
-
-   echo "installing nodejs FAILURE"
-
- exit 1
-
-   else
-
-   echo "installing nodejs SuCCESS"
- fi
+dnf install nodejs -y
+VALIDATE $? "installing nodejs" &>>$0.log
