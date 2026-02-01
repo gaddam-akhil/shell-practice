@@ -13,6 +13,7 @@ USER_ID=$(id -u)
    exit 1
    echo "installing nginx SuCCESS"
  fi
+
    dnf install mysql -y
  if [ $? -ne 0 ]; then
    echo "installing mysql FAILURE"
@@ -20,7 +21,8 @@ USER_ID=$(id -u)
    exit 1
    echo "installing mysql SuCCESS"
  fi
-   dnf install nginx -y
+
+   dnf install nodejs -y
  if [ $? -ne 0 ]; then
    echo "installing nodejs FAILURE"
  else 
