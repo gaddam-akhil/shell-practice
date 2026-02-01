@@ -5,4 +5,5 @@ USER_ID=$(id -u)
    echo " please run this script as root user access"
  fi  
 exit 1
+echo "installing nginx"
 dnf install nginx -y
