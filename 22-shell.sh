@@ -18,11 +18,11 @@ else
  fi
  }
 
-dnf install nginx -y
-VALIDATE $? "installing nginx" &>>$LOGS_FILES
+dnf install nginx -y  &>> $LOGS_FILES 
+VALIDATE $? "installing nginx" 
 
-dnf install mysql -y
-VALIDATE $? "installing mysql" &>>$LOGS_FILES
+dnf install mysql -y  &>> $LOGS_FILES 
+VALIDATE $? "installing mysql" 
 
-dnf install nodejs -y
-VALIDATE $? "installing nodejs" &>>$LOGS_FILES
+dnf install nodejs -y  &>> $LOGS_FILES 
+VALIDATE $? "installing nodejs" 
