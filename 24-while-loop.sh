@@ -17,4 +17,4 @@ while IFS= read -r line;
 do
   # Process the each line (here, we just print it)
   echo "$line"
-done < $"14-loops.sh #input which file to read
+done < 14-loops.sh #input which file to read
