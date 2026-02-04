@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILES="/var/log/shell-script/$0.log"
@@ -8,7 +7,6 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-
 
 if [ $USER_ID -ne 0 ]; then
  echo -e "$R please run this script as root user access $N" | tee -a $LOGS_FILES

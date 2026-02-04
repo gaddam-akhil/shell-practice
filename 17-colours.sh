@@ -24,7 +24,7 @@ echo -e "$R helloworld $N, $Y iam learnig shell $N"
 # mkdir -p $LOGS_FOLDER
 
 # VALIDATE() {
-#     if [ $1 -ne 0 ]; then
+#     if [ $1 ccvsvdsvdsvds dsvdsdsvdsvsdvdssdvdsvdsvsdvsdvsvsdv
 #    echo "$2 .... FAILURE" | tee -a $LOGS_FILES
 # exit 1
 #  else 
