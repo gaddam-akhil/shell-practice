@@ -20,5 +20,5 @@ if [ ! -d $LOGS_DIR ]; then
  while IFS= read -r filepath;
 do
   # Process the each line (here, we just print it)
-  echo "$filepath"
+  echo "deleting file $filepath"
 done <<< $FILES_TO_DELETE #input which file to read
