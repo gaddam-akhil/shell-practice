@@ -73,7 +73,7 @@ do
 done <<< $FILES #input which file to read
 
  else
-   log "archieval is ... $G failure $N"
+   log "archieval is ... $R failure $N"
    exit 1
    fi
 fi
