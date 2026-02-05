@@ -8,7 +8,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 SOURCE_DIR=$1
-DEST_DIR=$1
+DEST_DIR=$2
 DAYS=${3:-14} #14 days is the default value, if the user not supplied
 
  if [ $USER_ID -ne 0 ]; then
