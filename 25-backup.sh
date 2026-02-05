@@ -2,7 +2,7 @@
 
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
-LOGS_FILES="/var/log/shell-script/$0.log"
+LOGS_FILES="/var/log/shell-script/backup.log"
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -50,4 +50,9 @@ fi
   log "source directory : $SOURCE_DIR"
   log "destination directory : $DEST_DIR"
   log "Days : $DAYS"
+
+ if [ -z $FILES ]; then
+    log "no file to archieve....... $Y Skipping $N"
+   LOGS_FILES 
+fi
 
