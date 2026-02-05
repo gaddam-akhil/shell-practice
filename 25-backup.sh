@@ -56,7 +56,7 @@ fi
  else
     #app-logs-$TIME-stamp.zip
     log "files found to archieve : $FILES"
-    TIMESTAMP=$(date date +%F-%H-%M-%S)
+    TIMESTAMP=$(date +%F-%H-%M-%S)
     ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.tar.gz"
     echo "archieve name : $ZIP_FILE_NAME"
 fi
