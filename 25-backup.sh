@@ -210,7 +210,8 @@ if [ -z "$FILES" ]; then
     log "No files to archive....... $Y Skipping $N"
 else
     log "Files found to archive: $FILES"
-    TIMESTAMP=$(date "+%F-%H-%M-%S")
+  TIMESTAMP=$(date +%F-%H-%M-%S)
+
     ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.tar.gz"
     log "Archive name: $ZIP_FILE_NAME"
 
