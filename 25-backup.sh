@@ -69,7 +69,7 @@ do
   # Process the each line (here, we just print it)
   echo "deleting file: $filepath"
   rm -f $filepath
-  echo "deleting file: $filepath"
+  log "deleting file: $filepath"
 done <<< $FILES #input which file to read
 
  else
