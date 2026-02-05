@@ -17,11 +17,10 @@ fi
    mkdir -p $LOGS_FOLDER
 
    USAGE(){
-       echo -e"$R USAGE:: sudo backup <SOURCE_DIR> <DEST_DIR>[default 14 days] $N"
+       echo -e "$R USAGE:: sudo backup <SOURCE_DIR> <DEST_DIR>[default 14 days] $N"
        exit 1
    }
 
    if [ $# -lt 2 ]; then
      USAGE
    fi
-   
