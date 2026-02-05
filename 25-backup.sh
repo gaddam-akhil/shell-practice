@@ -44,7 +44,7 @@ fi
    fi
 
 #find the files
-  FILES=$(find $SOURCE_DIR -name "*.log" -type -f +$DAYS)
+  FILES=$(find $SOURCE_DIR -name "*.log" -type -f -mtime +$DAYS)
 
   log "backup started"
   log "source directory : $SOURCE_DIR"
