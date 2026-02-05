@@ -53,6 +53,5 @@ fi
 
  if [ -z $FILES ]; then
     log "no file to archieve....... $Y Skipping $N"
-   LOGS_FILES 
 fi
 
