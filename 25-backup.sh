@@ -32,12 +32,12 @@ fi
      USAGE
    fi
 
-   if [ ! -d $SOURCE_DIR ]; then
+   if [ ! -d "$SOURCE_DIR" ]; then
       echo -e "$R SOURCE DIRECTORY :: $SOURCE_DIR does not exist $N"
       exit 1   
    fi
 
-   if [ ! -d $DEST_DIR ]; then
+   if [ ! -d "$DEST_DIR" ]; then
       echo -e "$R DEST DIRECTORY :: $DEST_DIR does not exist $N"
     
       exit 1
@@ -59,5 +59,22 @@ fi
     TIMESTAMP=$(date +%F-%H-%M-%S)
     ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.tar.gz"
     echo "archieve name : $ZIP_FILE_NAME"
+    find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS) | tar -zcvf $ZIP_FILE_NAME
+#check archieve is succes or not
+if [ -f $ZIP_FILE_NAME ]; then
+   log "archeival is ... $G success $N"
+
+while IFS= read -r filepath;
+do
+  # Process the each line (here, we just print it)
+  echo "deleting file: $filepath"
+  rm -f $filepath
+  echo "deleting file: $filepath"
+done <<< $FILES #input which file to read
+
+ else
+   log "archieval is ... $G failure $N"
+   exit 1
+   fi
 fi
 
