@@ -51,7 +51,7 @@ fi
   log "destination directory : $DEST_DIR"
   log "Days : $DAYS"
 
- if [ -z $FILES ]; then
+ if [ -z {"$FILES"} ]; then
     log "no file to archieve....... $Y Skipping $N"
  else
     #app-logs-$TIME-stamp.zip
